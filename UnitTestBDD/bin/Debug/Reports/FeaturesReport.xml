@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestResults>
+  <Summary TestExecutionStart="2017-11-24T06:36:07.4147273Z" TestExecutionEnd="2017-11-24T06:36:07.5060351Z" TestExecutionTime="PT0.0913078S">
+    <Features Count="1" />
+    <Scenarios Count="5" Passed="5" Bypassed="0" Failed="0" Ignored="0" />
+    <Steps Count="34" Passed="34" Bypassed="0" Failed="0" Ignored="0" NotRun="0" />
+  </Summary>
+  <Feature Name="UTLightBDD">
+    <Label Name="Calc" />
+    <Description>In order to make calculator operations
+As a user
+I want to make some calculations</Description>
+    <Scenario Status="Passed" Name="Adding numbers" ExecutionStart="2017-11-24T06:36:07.4147273Z" ExecutionTime="PT0.0463479S">
+      <Name Format="Adding numbers" />
+      <Label Name="Add" />
+      <Step Status="Passed" Number="1" Name="GIVEN a calculator" ExecutionStart="2017-11-24T06:36:07.4337398Z" ExecutionTime="PT0.0083546S">
+        <StepName StepType="GIVEN" Format="a calculator" />
+      </Step>
+      <Step Status="Passed" Number="2" Name="THEN adding &quot;2&quot; to &quot;3&quot; should give &quot;5&quot;" ExecutionStart="2017-11-24T06:36:07.4487506Z" ExecutionTime="PT0.0119986S">
+        <StepName StepType="THEN" Format="adding &quot;{0}&quot; to &quot;{1}&quot; should give &quot;{2}&quot;">
+          <Parameter IsEvaluated="true">2</Parameter>
+          <Parameter IsEvaluated="true">3</Parameter>
+          <Parameter IsEvaluated="true">5</Parameter>
+        </StepName>
+      </Step>
+      <Step Status="Passed" Number="3" Name="AND adding &quot;-3&quot; to &quot;2&quot; should give &quot;-1&quot;" ExecutionStart="2017-11-24T06:36:07.460759Z" ExecutionTime="PT0.0000348S">
+        <StepName StepType="AND" Format="adding &quot;{0}&quot; to &quot;{1}&quot; should give &quot;{2}&quot;">
+          <Parameter IsEvaluated="true">-3</Parameter>
+          <Parameter IsEvaluated="true">2</Parameter>
+          <Parameter IsEvaluated="true">-1</Parameter>
+        </StepName>
+      </Step>
+      <Step Status="Passed" Number="4" Name="AND adding &quot;0&quot; to &quot;1&quot; should give &quot;1&quot;" ExecutionStart="2017-11-24T06:36:07.460759Z" ExecutionTime="PT0.0000087S">
+        <StepName StepType="AND" Format="adding &quot;{0}&quot; to &quot;{1}&quot; should give &quot;{2}&quot;">
+          <Parameter IsEvaluated="true">0</Parameter>
+          <Parameter IsEvaluated="true">1</Parameter>
+          <Parameter IsEvaluated="true">1</Parameter>
+        </StepName>
+      </Step>
+      <Step Status="Passed" Number="5" Name="AND adding &quot;-2&quot; to &quot;-1&quot; should give &quot;-3&quot;" ExecutionStart="2017-11-24T06:36:07.460759Z" ExecutionTime="PT0.000008S">
+        <StepName StepType="AND" Format="adding &quot;{0}&quot; to &quot;{1}&quot; should give &quot;{2}&quot;">
+          <Parameter IsEvaluated="true">-2</Parameter>
+          <Parameter IsEvaluated="true">-1</Parameter>
+          <Parameter IsEvaluated="true">-3</Parameter>
+        </StepName>
+      </Step>
+    </Scenario>
+    <Scenario Status="Passed" Name="Composite operations" ExecutionStart="2017-11-24T06:36:07.4677635Z" ExecutionTime="PT0.0235479S">
+      <Name Format="Composite operations" />
+      <Label Name="Composite" />
+      <Step Status="Passed" Number="1" Name="GIVEN a calculator" ExecutionStart="2017-11-24T06:36:07.4707656Z" ExecutionTime="PT0.0000463S">
+        <StepName StepType="GIVEN" Format="a calculator" />
+      </Step>
+      <Step Status="Passed" Number="2" Name="THEN it should add numbers" ExecutionStart="2017-11-24T06:36:07.4707656Z" ExecutionTime="PT0.0154707S">
+        <StepName StepType="THEN" Format="it should add numbers" />
+        <Comment>It is possible to add MultiAssertAttribute on composite step</Comment>
+        <SubStep Status="Passed" Number="1" Name="THEN adding &quot;2&quot; to &quot;3&quot; should give &quot;5&quot;" ExecutionStart="2017-11-24T06:36:07.4863393Z" ExecutionTime="PT0.0000363S" GroupPrefix="2.">
+          <StepName StepType="THEN" Format="adding &quot;{0}&quot; to &quot;{1}&quot; should give &quot;{2}&quot;">
+            <Parameter IsEvaluated="true">2</Parameter>
+            <Parameter IsEvaluated="true">3</Parameter>
+            <Parameter IsEvaluated="true">5</Parameter>
+          </StepName>
+        </SubStep>
+        <SubStep Status="Passed" Number="2" Name="AND adding &quot;2&quot; to &quot;-3&quot; should give &quot;-1&quot;" ExecutionStart="2017-11-24T06:36:07.4863393Z" ExecutionTime="PT0.0000124S" GroupPrefix="2.">
+          <StepName StepType="AND" Format="adding &quot;{0}&quot; to &quot;{1}&quot; should give &quot;{2}&quot;">
+            <Parameter IsEvaluated="true">2</Parameter>
+            <Parameter IsEvaluated="true">-3</Parameter>
+            <Parameter IsEvaluated="true">-1</Parameter>
+          </StepName>
+        </SubStep>
+        <SubStep Status="Passed" Number="3" Name="AND adding &quot;0&quot; to &quot;1&quot; should give &quot;1&quot;" ExecutionStart="2017-11-24T06:36:07.4863393Z" ExecutionTime="PT0.000009S" GroupPrefix="2.">
+          <StepName StepType="AND" Format="adding &quot;{0}&quot; to &quot;{1}&quot; should give &quot;{2}&quot;">
+            <Parameter IsEvaluated="true">0</Parameter>
+            <Parameter IsEvaluated="true">1</Parameter>
+            <Parameter IsEvaluated="true">1</Parameter>
+          </StepName>
+        </SubStep>
+      </Step>
+      <Step Status="Passed" Number="3" Name="AND it should multiply numbers" ExecutionStart="2017-11-24T06:36:07.4863393Z" ExecutionTime="PT0.0031181S">
+        <StepName StepType="AND" Format="it should multiply numbers" />
+        <Comment>This step does not have MultiAssertAttribute so will stop on first exception</Comment>
+        <SubStep Status="Passed" Number="1" Name="THEN multiplying &quot;2&quot; by &quot;3&quot; should give &quot;6&quot;" ExecutionStart="2017-11-24T06:36:07.4893412Z" ExecutionTime="PT0.0001265S" GroupPrefix="3.">
+          <StepName StepType="THEN" Format="multiplying &quot;{0}&quot; by &quot;{1}&quot; should give &quot;{2}&quot;">
+            <Parameter IsEvaluated="true">2</Parameter>
+            <Parameter IsEvaluated="true">3</Parameter>
+            <Parameter IsEvaluated="true">6</Parameter>
+          </StepName>
+        </SubStep>
+        <SubStep Status="Passed" Number="2" Name="AND multiplying &quot;2&quot; by &quot;-3&quot; should give &quot;-6&quot;" ExecutionStart="2017-11-24T06:36:07.4893412Z" ExecutionTime="PT0.0000096S" GroupPrefix="3.">
+          <StepName StepType="AND" Format="multiplying &quot;{0}&quot; by &quot;{1}&quot; should give &quot;{2}&quot;">
+            <Parameter IsEvaluated="true">2</Parameter>
+            <Parameter IsEvaluated="true">-3</Parameter>
+            <Parameter IsEvaluated="true">-6</Parameter>
+          </StepName>
+        </SubStep>
+        <SubStep Status="Passed" Number="3" Name="AND multiplying &quot;1&quot; by &quot;1&quot; should give &quot;1&quot;" ExecutionStart="2017-11-24T06:36:07.4893412Z" ExecutionTime="PT0.0000083S" GroupPrefix="3.">
+          <StepName StepType="AND" Format="multiplying &quot;{0}&quot; by &quot;{1}&quot; should give &quot;{2}&quot;">
+            <Parameter IsEvaluated="true">1</Parameter>
+            <Parameter IsEvaluated="true">1</Parameter>
+            <Parameter IsEvaluated="true">1</Parameter>
+          </StepName>
+        </SubStep>
+      </Step>
+      <Step Status="Passed" Number="4" Name="AND it should divide numbers" ExecutionStart="2017-11-24T06:36:07.4893412Z" ExecutionTime="PT0.0018707S">
+        <StepName StepType="AND" Format="it should divide numbers" />
+        <SubStep Status="Passed" Number="1" Name="THEN dividing &quot;6&quot; by &quot;3&quot; should give &quot;2&quot;" ExecutionStart="2017-11-24T06:36:07.4913425Z" ExecutionTime="PT0.0001163S" GroupPrefix="4.">
+          <StepName StepType="THEN" Format="dividing &quot;{0}&quot; by &quot;{1}&quot; should give &quot;{2}&quot;">
+            <Parameter IsEvaluated="true">6</Parameter>
+            <Parameter IsEvaluated="true">3</Parameter>
+            <Parameter IsEvaluated="true">2</Parameter>
+          </StepName>
+        </SubStep>
+        <SubStep Status="Passed" Number="2" Name="AND multiplying &quot;5&quot; by &quot;2&quot; should give &quot;10&quot;" ExecutionStart="2017-11-24T06:36:07.4913425Z" ExecutionTime="PT0.0000096S" GroupPrefix="4.">
+          <StepName StepType="AND" Format="multiplying &quot;{0}&quot; by &quot;{1}&quot; should give &quot;{2}&quot;">
+            <Parameter IsEvaluated="true">5</Parameter>
+            <Parameter IsEvaluated="true">2</Parameter>
+            <Parameter IsEvaluated="true">10</Parameter>
+          </StepName>
+        </SubStep>
+      </Step>
+    </Scenario>
+    <Scenario Status="Passed" Name="Dividing numbers" ExecutionStart="2017-11-24T06:36:07.4933445Z" ExecutionTime="PT0.00273S">
+      <Name Format="Dividing numbers" />
+      <Label Name="Divide" />
+      <Step Status="Passed" Number="1" Name="GIVEN a calculator" ExecutionStart="2017-11-24T06:36:07.4953452Z" ExecutionTime="PT0.0000136S">
+        <StepName StepType="GIVEN" Format="a calculator" />
+      </Step>
+      <Step Status="Passed" Number="2" Name="THEN dividing &quot;6&quot; by &quot;2&quot; should give &quot;3&quot;" ExecutionStart="2017-11-24T06:36:07.4953452Z" ExecutionTime="PT0.000013S">
+        <StepName StepType="THEN" Format="dividing &quot;{0}&quot; by &quot;{1}&quot; should give &quot;{2}&quot;">
+          <Parameter IsEvaluated="true">6</Parameter>
+          <Parameter IsEvaluated="true">2</Parameter>
+          <Parameter IsEvaluated="true">3</Parameter>
+        </StepName>
+      </Step>
+      <Step Status="Passed" Number="3" Name="AND dividing &quot;2&quot; by &quot;1&quot; should give &quot;2&quot;" ExecutionStart="2017-11-24T06:36:07.4953452Z" ExecutionTime="PT0.000009S">
+        <StepName StepType="AND" Format="dividing &quot;{0}&quot; by &quot;{1}&quot; should give &quot;{2}&quot;">
+          <Parameter IsEvaluated="true">2</Parameter>
+          <Parameter IsEvaluated="true">1</Parameter>
+          <Parameter IsEvaluated="true">2</Parameter>
+        </StepName>
+      </Step>
+      <Step Status="Passed" Number="4" Name="AND dividing &quot;2&quot; by &quot;3&quot; should give &quot;0&quot;" ExecutionStart="2017-11-24T06:36:07.4953452Z" ExecutionTime="PT0.0000087S">
+        <StepName StepType="AND" Format="dividing &quot;{0}&quot; by &quot;{1}&quot; should give &quot;{2}&quot;">
+          <Parameter IsEvaluated="true">2</Parameter>
+          <Parameter IsEvaluated="true">3</Parameter>
+          <Parameter IsEvaluated="true">0</Parameter>
+        </StepName>
+      </Step>
+      <Step Status="Passed" Number="5" Name="AND dividing &quot;0&quot; by &quot;5&quot; should give &quot;0&quot;" ExecutionStart="2017-11-24T06:36:07.4953452Z" ExecutionTime="PT0.0000096S">
+        <StepName StepType="AND" Format="dividing &quot;{0}&quot; by &quot;{1}&quot; should give &quot;{2}&quot;">
+          <Parameter IsEvaluated="true">0</Parameter>
+          <Parameter IsEvaluated="true">5</Parameter>
+          <Parameter IsEvaluated="true">0</Parameter>
+        </StepName>
+      </Step>
+    </Scenario>
+    <Scenario Status="Passed" Name="Multiplying numbers" ExecutionStart="2017-11-24T06:36:07.4973471Z" ExecutionTime="PT0.0031924S">
+      <Name Format="Multiplying numbers" />
+      <Label Name="Multiplying" />
+      <Step Status="Passed" Number="1" Name="GIVEN a calculator" ExecutionStart="2017-11-24T06:36:07.5003487Z" ExecutionTime="PT0.0000118S">
+        <StepName StepType="GIVEN" Format="a calculator" />
+      </Step>
+      <Step Status="Passed" Number="2" Name="THEN multiplying &quot;6&quot; by &quot;2&quot; should give &quot;12&quot;" ExecutionStart="2017-11-24T06:36:07.5003487Z" ExecutionTime="PT0.0000115S">
+        <StepName StepType="THEN" Format="multiplying &quot;{0}&quot; by &quot;{1}&quot; should give &quot;{2}&quot;">
+          <Parameter IsEvaluated="true">6</Parameter>
+          <Parameter IsEvaluated="true">2</Parameter>
+          <Parameter IsEvaluated="true">12</Parameter>
+        </StepName>
+      </Step>
+      <Step Status="Passed" Number="3" Name="AND multiplying &quot;-1&quot; by &quot;2&quot; should give &quot;-2&quot;" ExecutionStart="2017-11-24T06:36:07.5003487Z" ExecutionTime="PT0.0000083S">
+        <StepName StepType="AND" Format="multiplying &quot;{0}&quot; by &quot;{1}&quot; should give &quot;{2}&quot;">
+          <Parameter IsEvaluated="true">-1</Parameter>
+          <Parameter IsEvaluated="true">2</Parameter>
+          <Parameter IsEvaluated="true">-2</Parameter>
+        </StepName>
+      </Step>
+      <Step Status="Passed" Number="4" Name="AND multiplying &quot;2&quot; by &quot;0&quot; should give &quot;0&quot;" ExecutionStart="2017-11-24T06:36:07.5003487Z" ExecutionTime="PT0.0000071S">
+        <StepName StepType="AND" Format="multiplying &quot;{0}&quot; by &quot;{1}&quot; should give &quot;{2}&quot;">
+          <Parameter IsEvaluated="true">2</Parameter>
+          <Parameter IsEvaluated="true">0</Parameter>
+          <Parameter IsEvaluated="true">0</Parameter>
+        </StepName>
+      </Step>
+      <Step Status="Passed" Number="5" Name="AND multiplying &quot;2&quot; by &quot;3&quot; should give &quot;6&quot;" ExecutionStart="2017-11-24T06:36:07.5003487Z" ExecutionTime="PT0.0000071S">
+        <StepName StepType="AND" Format="multiplying &quot;{0}&quot; by &quot;{1}&quot; should give &quot;{2}&quot;">
+          <Parameter IsEvaluated="true">2</Parameter>
+          <Parameter IsEvaluated="true">3</Parameter>
+          <Parameter IsEvaluated="true">6</Parameter>
+        </StepName>
+      </Step>
+      <Step Status="Passed" Number="6" Name="AND multiplying &quot;2&quot; by &quot;-3&quot; should give &quot;-6&quot;" ExecutionStart="2017-11-24T06:36:07.5003487Z" ExecutionTime="PT0.0000077S">
+        <StepName StepType="AND" Format="multiplying &quot;{0}&quot; by &quot;{1}&quot; should give &quot;{2}&quot;">
+          <Parameter IsEvaluated="true">2</Parameter>
+          <Parameter IsEvaluated="true">-3</Parameter>
+          <Parameter IsEvaluated="true">-6</Parameter>
+        </StepName>
+      </Step>
+    </Scenario>
+    <Scenario Status="Passed" Name="Substruction numbers" ExecutionStart="2017-11-24T06:36:07.5023482Z" ExecutionTime="PT0.0036869S">
+      <Name Format="Substruction numbers" />
+      <Label Name="Substruction" />
+      <Step Status="Passed" Number="1" Name="GIVEN a calculator" ExecutionStart="2017-11-24T06:36:07.5063527Z" ExecutionTime="PT0.0000152S">
+        <StepName StepType="GIVEN" Format="a calculator" />
+      </Step>
+      <Step Status="Passed" Number="2" Name="THEN substraction &quot;6&quot; by &quot;2&quot; should give &quot;4&quot;" ExecutionStart="2017-11-24T06:36:07.5063527Z" ExecutionTime="PT0.0001247S">
+        <StepName StepType="THEN" Format="substraction &quot;{0}&quot; by &quot;{1}&quot; should give &quot;{2}&quot;">
+          <Parameter IsEvaluated="true">6</Parameter>
+          <Parameter IsEvaluated="true">2</Parameter>
+          <Parameter IsEvaluated="true">4</Parameter>
+        </StepName>
+      </Step>
+      <Step Status="Passed" Number="3" Name="AND substraction &quot;-1&quot; by &quot;2&quot; should give &quot;-3&quot;" ExecutionStart="2017-11-24T06:36:07.5063527Z" ExecutionTime="PT0.0000093S">
+        <StepName StepType="AND" Format="substraction &quot;{0}&quot; by &quot;{1}&quot; should give &quot;{2}&quot;">
+          <Parameter IsEvaluated="true">-1</Parameter>
+          <Parameter IsEvaluated="true">2</Parameter>
+          <Parameter IsEvaluated="true">-3</Parameter>
+        </StepName>
+      </Step>
+      <Step Status="Passed" Number="4" Name="AND substraction &quot;2&quot; by &quot;0&quot; should give &quot;2&quot;" ExecutionStart="2017-11-24T06:36:07.5063527Z" ExecutionTime="PT0.0000074S">
+        <StepName StepType="AND" Format="substraction &quot;{0}&quot; by &quot;{1}&quot; should give &quot;{2}&quot;">
+          <Parameter IsEvaluated="true">2</Parameter>
+          <Parameter IsEvaluated="true">0</Parameter>
+          <Parameter IsEvaluated="true">2</Parameter>
+        </StepName>
+      </Step>
+      <Step Status="Passed" Number="5" Name="AND substraction &quot;2&quot; by &quot;3&quot; should give &quot;-1&quot;" ExecutionStart="2017-11-24T06:36:07.5063527Z" ExecutionTime="PT0.0000074S">
+        <StepName StepType="AND" Format="substraction &quot;{0}&quot; by &quot;{1}&quot; should give &quot;{2}&quot;">
+          <Parameter IsEvaluated="true">2</Parameter>
+          <Parameter IsEvaluated="true">3</Parameter>
+          <Parameter IsEvaluated="true">-1</Parameter>
+        </StepName>
+      </Step>
+      <Step Status="Passed" Number="6" Name="AND substraction &quot;2&quot; by &quot;-3&quot; should give &quot;5&quot;" ExecutionStart="2017-11-24T06:36:07.5063527Z" ExecutionTime="PT0.0000071S">
+        <StepName StepType="AND" Format="substraction &quot;{0}&quot; by &quot;{1}&quot; should give &quot;{2}&quot;">
+          <Parameter IsEvaluated="true">2</Parameter>
+          <Parameter IsEvaluated="true">-3</Parameter>
+          <Parameter IsEvaluated="true">5</Parameter>
+        </StepName>
+      </Step>
+    </Scenario>
+  </Feature>
+</TestResults>
